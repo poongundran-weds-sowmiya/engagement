@@ -1,0 +1,36 @@
+body,html{
+  margin:0;
+  background: #eeffe4;
+}
+.main-content {
+  position: relative;
+  height: 100vh;
+}
+.main-content::before {
+  content: "";
+  background: url(../images/flower-pattern-1.png) center center/100% no-repeat local;
+  width: 250px;
+  height: 100px;
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  z-index: 1;
+}
+.main-content::after {
+  content: "";
+  background: url(../images/flower-pattern-2.png) center center/100% no-repeat local;
+  width: 180px;
+  height: 275px;
+  position: fixed;
+  right: -20px;
+  top: -30px;
+  z-index: 1;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
